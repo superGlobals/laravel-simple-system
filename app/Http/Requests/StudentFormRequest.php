@@ -31,4 +31,14 @@ class StudentFormRequest extends FormRequest
             'image' => 'nullable',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'The name field is required.',
+            'email.required' => 'The email field is required.',
+            'age.required' => 'The age field is required.',
+            'gender.required' => 'The gender field is required.',
+        ];
+    }
 }
